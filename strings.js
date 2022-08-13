@@ -7,7 +7,6 @@
 // console.log(text.includes("world"));
 
 // template litarals
-
 let start = "Text "
 let text =
 `${start} : The quick

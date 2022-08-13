@@ -1,8 +1,17 @@
- const array = [1,2,3,4,5,6,7,8,9];
-let [...c] = array;
+// Get Full Name and Return First name and last name
+ function getFistnameandLastname (fullname){
+    const fullNameVar = fullname.split(' ');
 
-// console.log(typeof(c));
-// console.log(typeof(b));
-// console.log(typeof(a));
+    if(fullNameVar.length >= 3) {
+        let firstName = fullNameVar[0];
+        let lastName = fullNameVar.slice(1).join(" ");
+        return [firstName,lastName];
+    }
+    else {
+        return fullname.split(' ');
+    }
+    
+ }
 
-console.log(c.slice(3));
+ const [firstName, lastName] = getFistnameandLastname("Mr Samir Hafiz")
+ console.log(`First Name: ${firstName}\nLast Name: ${lastName}`);
